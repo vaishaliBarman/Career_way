@@ -1,0 +1,181 @@
+/* General styling for cards container */
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 50px 0;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Individual card styling */
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 45%;
+    cursor: pointer;
+  }
+  
+  .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image inside the card */
+  .card-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover .card-image {
+    transform: scale(1.05);
+  }
+  
+  /* Text inside the card */
+  .card h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-top: 15px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #777;
+    padding: 0 15px 15px;
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  /* Card transition effect */
+  .card-row {
+    transition: all 0.3s ease;
+  }
+  
+  /* Animation for the cards row */
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  
+
+  /* Career Page Styles */
+
+/* Card Row Container */
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #ecf0f1; /* Light background color */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Styling */
+.card {
+  width: 350px; /* Increased width */
+  height: 450px; /* Increased height */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+/* Hover Effect on Card */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling */
+.card-image {
+  width: 100%;
+  height: 60%; /* Adjust height to fit within the new card size */
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+/* Button Styling inside the Card */
+.btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #1d4b69; /* Blue button */
+  color: #f39c12; 
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  width: 80%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect on Button */
+.card:hover  {
+  background-color: #cbd6dd; /* Darker blue on hover */
+  transform: scale(1.05);
+   /* Slightly grow the button */
+}
+.btn:hover{
+  background-color: #31739e; /* Darker blue on hover */
+
+   
+   /* Slightly grow the button */
+}
+
+/* Button Animation */
+.card:hover .card-image {
+  opacity: 0.8; /* Slight opacity change when hovering over the card */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .card-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin: 10px 0;
+    height: auto; /* Auto height for mobile to maintain proportions */
+  }
+
+  .card-image {
+    height: 50%; /* Adjust image height for mobile */
+  }
+  .btn {
+    width: 90%; /* Increase button width for mobile for better visibility */
+  }
+}
+ 

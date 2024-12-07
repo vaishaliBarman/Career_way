@@ -1,0 +1,123 @@
+  
+/* General Page Styling */
+.explorer-container {
+    padding: 0px;
+    background: white;
+    font-family: 'Poppins', sans-serif;
+   /* min-height: 100vh;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  
+  .explorer-container h1 {
+    color: #06014de5;
+    font-size: 3rem;
+    margin-bottom: 0px;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+  }
+  
+  .explorer-container h1::after {
+    content: '';
+    width: 250px;
+    height: 5px;
+    background: linear-gradient(90deg, #ee4933, #f5dd07, #32f5cb, #39f520);
+    display: block;
+    margin: 5px auto;
+    border-radius: 10px;
+  }
+  
+  /* Page Subtitle */
+  .explorer-container p {
+    color: #3b3939;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 600px;
+    padding-left: 20px;
+  }
+  
+  /* Animated Grid Layout */
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    width: 100%;
+    padding: 0 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Course Card Design */
+  .course-card {
+    /*background-image: url("https://www.bookguruonline.com/wp-content/uploads/2023/03/browse-books-1.png")*/
+    background-image: linear-gradient(10deg,  rgba(154, 223, 217, 0.3), rgba(15, 116, 175, 0.2));
+     
+    border-radius: 20px;
+    box-shadow: 0 5px 2px rgba(68, 61, 61, 0.767);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+    transform: scale(1);
+     
+    
+  }
+  
+  .course-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  .title{
+    padding-left: 20px;
+    color: rgba(2, 34, 77, 0.925);
+    font-weight: bold;
+    font-size: 2em;;
+  }
+   
+  
+
+  /* Responsive Design for Smaller Devices */
+  @media screen and (max-width: 768px) {
+    .explorer-container h1 {
+      font-size: 2.5rem;
+    }
+  
+    .courses-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .course-card-header {
+      height: 150px;
+      font-size: 1.8rem;
+    }
+  
+    .course-card-content h3 {
+      font-size: 1.3rem;
+    }
+  
+    .course-card-content p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .explorer-container h1 {
+      font-size: 2rem;
+    }
+  
+    .courses-grid {
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+  
+    .course-card-header {
+      height: 120px;
+      font-size: 1.5rem;
+    }
+  }
+  
+   

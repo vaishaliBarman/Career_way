@@ -1,0 +1,179 @@
+ /* General Body Styling */
+body {
+    background-image: linear-gradient(145deg, #618da1bd, rgba(89, 104, 170, 0.651), rgba(60, 46, 136, 0.486));
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Box Styling */
+.box {
+    width: 45%; /* Default width for desktop */
+    height: 70vh; /* Adjust height for better proportion */
+    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1015/604/desktop-wallpaper-children-s-ministry-background-children.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 14px rgba(3, 12, 85, 0.938);
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/* Hover Effect on Card */
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling */
+.card-image {
+    width: 100%;
+    height: 60%; /* Adjust height to fit within the new card size */
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+/* Button Styling inside the Card */
+.btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #1e5e88; /* Blue button */
+    color: #f39c12;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    width: 80%; /* Button width */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect on Button */
+.box:hover {
+    background-color: #e8eff3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly grow the button */
+}
+
+.btn:hover {
+    background-color: #023e66; /* Darker blue on hover */
+}
+
+/* Button Animation */
+.box:hover .card-image {
+    opacity: 0.8; /* Slight opacity change when hovering over the card */
+}
+
+/* Flexbox Container for Aligning Cards */
+.sanjeevni {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 50px;
+    width: 100%;
+    flex-wrap: wrap; /* Ensures cards stack on smaller screens */
+}
+
+/* Heading Styling */
+.box h3 {
+    font-size: 2.4rem;
+    color: #051a49;
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+/* Paragraph Styling */
+.box p {
+    font-size: 1rem;
+    color: #4e4104;
+    padding: 0 15px 15px;
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Responsive Design for Tablets and Mobile Devices */
+@media (max-width: 1024px) {
+    .box {
+        width: 48%; /* Adjust box width for tablets */
+        height: auto; /* Auto height for better proportions */
+        margin: 20px 10px;
+    }
+
+    .card-image {
+        height: 50%; /* Adjust image height for tablets */
+    }
+
+    .btn {
+        width: 85%; /* Increase button width for better visibility */
+    }
+
+    /* Adjust font sizes for tablets */
+    .box h3 {
+        font-size: 2rem;
+    }
+
+    .box p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 80%; /* Increase width for mobile */
+        height: auto;
+        margin: 15px 0;
+    }
+
+    .card-image {
+        height: 50%; /* Adjust image height for mobile */
+    }
+
+    .btn {
+        width: 90%; /* Increase button width for mobile */
+    }
+
+    /* Adjust font sizes for mobile */
+    .box h3 {
+        font-size: 1.8rem;
+    }
+
+    .box p {
+        font-size: 0.85rem;
+    }
+}
+
+/* For Very Small Screens (e.g. mobile phones in portrait mode) */
+@media (max-width: 480px) {
+    .box {
+        width: 90%; /* Full width for very small screens */
+        margin: 10px 0;
+    }
+
+    .card-image {
+        height: 45%; /* Further adjust image height for very small screens */
+    }
+
+    .btn {
+        width: 95%; /* Full width button for small screens */
+        padding: 15px 20px;
+        font-size: 16px;
+    }
+
+    .box h3 {
+        font-size: 1.6rem;
+    }
+
+    .box p {
+        font-size: 0.8rem;
+    }
+}

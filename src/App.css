@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+ /* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #032e58;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.753);
+    z-index: 10;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Logo styling */
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
   }
-}
+  
+  .logo h1 {
+    font-size: 24px;
+    color: #fdf5f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar links */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 10px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #f7eeee;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #007bff;
+  }
+  
+  /* Menu toggle button */
+  .menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block; /* Show menu toggle button on small screens */
+    }
+  
+    .nav-links {
+      display: none; /* Hide menu items by default */
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #f8f9fa;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 5px;
+      z-index: 9;
+    }
+  
+    .nav-links.open {
+      display: flex; /* Show menu when open */
+    }
+  
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .nav-links {
+      display: flex; /* Show navbar items as normal */
+      position: static;
+      box-shadow: none;
+      flex-direction: row;
+    }
+  
+    .menu-toggle {
+      display: none; /* Hide menu toggle button on larger screens */
+    }
+  }
+  

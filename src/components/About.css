@@ -1,0 +1,234 @@
+/* About.css */
+
+.about {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    color: #fff;
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+}
+
+.about h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Gold color for heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+.about p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ecf0f1;
+    text-align: justify;
+}
+
+.about h2, .about h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #f39c12; /* Vibrant orange for subheadings */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #ecf0f1; /* Subtle underline effect */
+    padding-bottom: 5px;
+}
+
+.about h3 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+.about ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.about li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+.about a {
+    color: #1abc9c; /* Aqua color for links */
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+}
+
+.about a:hover {
+    color: #16a085;
+}
+
+.about button.cta-button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #3498db; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about button.cta-button:hover {
+    background-color: #2980b9; /* Slightly darker blue */
+    transform: scale(1.05);
+}
+
+/* FadeIn Animation */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about h1 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1rem;
+    }
+
+    .about h2, .about h3 {
+        font-size: 1.5rem;
+    }
+}
+/* Hide all <p> tags by default */
+.about p {
+    display: none;
+}
+
+/* Show <p> tags when hovering over their preceding <h2> or <h3> */
+.about h2:hover + p, 
+.about h3:hover + p {
+    display: block;
+}
+
+
+
+
+
+
+
+
+.about {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Gradient background */
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+  }
+  
+  .about h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f1c40f; /* Gold color for heading */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  .about h2, .about h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 30px;
+    color: #f39c12; /* Vibrant orange for subheadings */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #ecf0f1; /* Subtle underline effect */
+    padding-bottom: 5px;
+    cursor: pointer; /* Indicate that this text is clickable */
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #ecf0f1;
+    text-align: justify;
+    display: none; /* Initially hide all p tags */
+  }
+  
+  /* Show paragraphs when the respective heading is clicked */
+  .about .section .content.visible {
+    display: block;
+  }
+  
+  .about ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .about li {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .about a {
+    color: #1abc9c; /* Aqua color for links */
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .about a:hover {
+    color: #16a085;
+  }
+  
+  .about button.cta-button {
+    display: block;
+    margin: 30px auto;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #3498db; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .about button.cta-button:hover {
+    background-color: #2980b9; /* Slightly darker blue */
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about h1 {
+      font-size: 2.5rem;
+    }
+  
+    .about p {
+      font-size: 1rem;
+    }
+  
+    .about h2, .about h3 {
+      font-size: 1.5rem;
+    }
+  }
+  

@@ -1,0 +1,126 @@
+.card{
+  background-image: linear-gradient(10deg,  rgba(154, 223, 217, 0.3), rgba(15, 116, 175, 0.2));
+    
+}
+/* Basic Page Styling */
+.career-guidance-container {
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    padding: 20px;
+  }
+  
+  .career-guidance-header {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  
+  .career-guidance-header h1 {
+    font-size: 3.5rem;
+    color: #244070;
+  }
+  
+  .career-guidance-header p {
+    font-size: 1.2rem;
+    color: #254a5c;
+  }
+  
+  /* Career Guidance Section */
+  .career-guidance-section {
+    margin-bottom: 10px;
+  }
+  
+  .career-guidance-section h2 {
+    font-size: 2.5rem;
+    color: #244070;
+    margin-bottom: 20px;
+  }
+  
+  .career-guidance-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card {
+     
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-bottom: 10px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .card h3 {
+    font-size: 1.8rem;
+    color: #244070;
+  }
+  
+  .card p {
+    font-size: 1.2rem;
+    color: #254a5c;
+  }
+  
+  .card ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .card ul li {
+    font-size: 1rem;
+    color: #031f2e;
+  }
+  
+  /* Regional Guidance Section */
+  .regional-guidance {
+    background: #2121b1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .regional-guidance h2 {
+    font-size: 2.5rem;
+    color: #244070;
+  }
+  
+  .regional-guidance h3 {
+    font-size: 1.8rem;
+    color: #244070;
+    margin-top: 20px;
+  }
+  
+  .regional-info ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  .regional-info ul li {
+    font-size: 1.2rem;
+    color: #4a6572;
+  }
+  
+   
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .career-guidance-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .card {
+      width: 80%;
+    }
+  
+    .career-guidance-header h1 {
+      font-size: 2.5rem;
+    }
+  
+    .career-guidance-header p {
+      font-size: 1rem;
+    }
+  
+     
+  }
+  
