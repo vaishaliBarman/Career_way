@@ -13,7 +13,7 @@ function Career() {
     navigate('/study1'); // Navigate to the Study page
   };
   const handleGraduationClick = () => {
-    navigate('/study1'); // Navigate to the Study page
+    navigate('/study2'); // Navigate to the Study page
   }
   return (
     <>

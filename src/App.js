@@ -10,6 +10,8 @@ import Vocational from './components/Vocational'; // Vocational Page
 import CareerOption from './components/CareerOption';
 import Explorer from './components/Explorer';
 import Study1 from './components/Study1';
+import Study2 from './components/Study2';
+import Graduation from './components/Graduation';
 function App() {
   return (
     <Router>
@@ -25,6 +27,10 @@ function App() {
         <Route path="study1" element={<Study1 />} />
         <Route path="/careerOption" element={<CareerOption />} />
         <Route path="/explorer" element={<Explorer/>} />
+        <Route path="/study2" element={<Study2/>} />
+        <Route path="/graduation" element={<Graduation />} />
+        <Route path="explorer" element={<Explorer />} />
+
          
       </Routes>
     </Router>

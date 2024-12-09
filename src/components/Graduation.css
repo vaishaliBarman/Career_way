@@ -1,0 +1,100 @@
+/* General Body Styling */
+ 
+  
+  /* Container for Graduation Options */
+  .container {
+     
+    
+    background: #ffffff;
+    
+    justify-content: center;
+     padding-left: 30px;
+     margin-top: 50px;
+  }
+  
+  /* Category Titles */
+  .category-title {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    
+    align-items: center;
+  }
+  
+  /* Course Cards */
+  .course-card {
+    background: linear-gradient(145deg, #ac9999, #d19b9b);
+    border-radius: 15px;
+    box-shadow: 7px 7px 20px #bebebe, -7px -7px 20px #ffffff;
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Course Titles */
+  .course-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  /* Fields Section */
+  .fields {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .fields span {
+    display: inline-block;
+    background: rgba(236, 191, 69, 0.884);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 2px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Career Options and Exams */
+  .details {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #9b0e83;
+  }
+  
+   
+  
+   
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .course-card {
+      padding: 15px;
+    }
+  
+    .course-title {
+      font-size: 1.2rem;
+    }
+  }
+  
+  /* Animation for Fade In */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
