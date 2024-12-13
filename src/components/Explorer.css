@@ -1,123 +1,120 @@
-  
-/* General Page Styling */
+ /* General reset */
+ 
 .explorer-container {
-    padding: 0px;
-    background: white;
-    font-family: 'Poppins', sans-serif;
-   /* min-height: 100vh;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-  }
-  
-  .explorer-container h1 {
-    color: #06014de5;
-    font-size: 3rem;
-    margin-bottom: 0px;
-    text-align: center;
-    position: relative;
-    text-transform: uppercase;
-  }
-  
-  .explorer-container h1::after {
-    content: '';
-    width: 250px;
-    height: 5px;
-    background: linear-gradient(90deg, #ee4933, #f5dd07, #32f5cb, #39f520);
-    display: block;
-    margin: 5px auto;
-    border-radius: 10px;
-  }
-  
-  /* Page Subtitle */
-  .explorer-container p {
-    color: #3b3939;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    max-width: 600px;
-    padding-left: 20px;
-  }
-  
-  /* Animated Grid Layout */
-  .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 25px;
-    width: 100%;
-    padding: 0 20px;
-    animation: fadeIn 1s ease-in-out;
-  }
-  
-  /* Course Card Design */
-  .course-card {
-    /*background-image: url("https://www.bookguruonline.com/wp-content/uploads/2023/03/browse-books-1.png")*/
-    background-image: linear-gradient(10deg,  rgba(154, 223, 217, 0.3), rgba(15, 116, 175, 0.2));
-     
-    border-radius: 20px;
-    box-shadow: 0 5px 2px rgba(68, 61, 61, 0.767);
-    overflow: hidden;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    transition: all 0.4s ease;
-    transform: scale(1);
-     
-    
-  }
-  
-  .course-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-  }
-  .title{
-    padding-left: 20px;
-    color: rgba(2, 34, 77, 0.925);
-    font-weight: bold;
-    font-size: 2em;;
-  }
-   
-  
+  text-align: center;
+  padding: 40px 20px;
+}
 
-  /* Responsive Design for Smaller Devices */
-  @media screen and (max-width: 768px) {
-    .explorer-container h1 {
-      font-size: 2.5rem;
-    }
-  
-    .courses-grid {
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
-  
-    .course-card-header {
-      height: 150px;
-      font-size: 1.8rem;
-    }
-  
-    .course-card-content h3 {
-      font-size: 1.3rem;
-    }
-  
-    .course-card-content p {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    .explorer-container h1 {
-      font-size: 2rem;
-    }
-  
-    .courses-grid {
-      grid-template-columns: 1fr;
-      gap: 15px;
-    }
-  
-    .course-card-header {
-      height: 120px;
-      font-size: 1.5rem;
-    }
-  }
-  
+.explorer-container h1 {
+  font-size: 2.5rem;
+  color: #0a0a0a;
+    text-shadow: 0 5px 4px rgba(30, 194, 66, 0.8);
+     
+    font-family:'Cinzel Decorative', serif;
+    z-index: 2;
    
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.explorer-container p {
+  font-size: 1.2rem;
+  color: #1c5a14;
+  margin-bottom: 40px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Courses Grid */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+/* Course Card */
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.575);
+}
+
+/* Course Card Content */
+.course-card h3 {
+  background-color: #eaf7e4;
+  color: #074d1e;
+  padding: 15px;
+  font-size: 1.5rem;
+  margin: 0;
+  border-bottom: 2px solid #e0f5e3;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.course-card p {
+  padding: 15px;
+  font-size: 1.3rem;
+  line-height: 1.2;
+  color: #066603;
+  text-align: start;
+}
+
+/* Highlight key text */
+.course-card strong {
+  color: #1a4b07;
+  font-weight: bold;
+}
+
+/* Card Animation Effects */
+ 
+.course-card:hover:before {
+  width: 100%;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .explorer-container h1 {
+    font-size: 2rem;
+  }
+
+  .explorer-container p {
+    font-size: 1rem;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

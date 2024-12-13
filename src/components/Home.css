@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh; /* Full viewport height */
-    background: linear-gradient(145deg, #e7e7fc, #dfe7fd, #dfecfc); /* Gradient background */
+    background-color: #d8e0b5;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     padding: 20px;
@@ -35,11 +35,12 @@
     letter-spacing: 3px;
     margin: 0;
     text-transform: uppercase;
-    color: #244070;
-    text-shadow: 0 5px 5px rgba(9, 38, 143, 0.8);
+    color: #0a0a0a;
+    text-shadow: 0 5px 4px rgba(30, 194, 66, 0.8);
     opacity: 0;
     animation: fadeInUp 1s forwards, bounceIn 1.5s forwards;
     transition: color 0.3s ease;
+    font-family: 'Cinzel Decorative', serif;
     z-index: 2; /* Above the gradient */
 }
 
@@ -128,11 +129,6 @@
         font-size: 1.3rem; /* Adjust paragraph font size */
     }
 
-    .home .cta-button {
-        font-size: 1rem;
-        padding: 10px 30px;
-    }
-
     .home {
         padding: 15px; /* Adjust padding for tablets */
     }
@@ -149,11 +145,6 @@
         line-height: 1.6; /* Adjust line height for better readability */
     }
 
-    .home .cta-button {
-        font-size: 1rem;
-        padding: 10px 25px;
-    }
-
     .home {
         padding: 10px; /* Adjust padding for mobile screens */
     }
@@ -168,11 +159,6 @@
     .home p {
         font-size: 1rem; /* Further decrease paragraph font size */
         line-height: 1.5; /* Adjust line height */
-    }
-
-    .home .cta-button {
-        font-size: 0.9rem;
-        padding: 8px 20px;
     }
 
     .home {

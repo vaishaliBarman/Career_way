@@ -141,7 +141,7 @@ const Graduation = () => {
 
   return (
     <div className="container">
-      <h1 className="main-title">Explore Graduation Options</h1>
+      <h1 className="main-title">Explore Graduation Options </h1>
       {graduationOptions.map((categoryData, index) => (
         <div key={index} className="category">
           <div

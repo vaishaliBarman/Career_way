@@ -18,7 +18,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    background-color: #f9f9f9;
+
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 45%;
     cursor: pointer;
@@ -83,19 +83,18 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  padding: 50px 20px;
+  padding: 40px 20px;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #ecf0f1; /* Light background color */
+    /* Light background color */
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  
 }
 
 /* Card Styling */
 .card {
   width: 350px; /* Increased width */
   height: 450px; /* Increased height */
-  background: #fff;
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -103,14 +102,9 @@
   text-align: center;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
   cursor: pointer;
-  margin-bottom: 30px;
 }
-
-/* Hover Effect on Card */
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
+ 
+ 
 
 /* Card Image Styling */
 .card-image {
@@ -122,12 +116,11 @@
 
 /* Button Styling inside the Card */
 .btn {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
+   
+  
   transform: translateX(-50%);
-  background-color: #1d4b69; /* Blue button */
-  color: #f39c12; 
+  background-color: #035715; /* Blue button */
+  color: #f8f4ee; 
   padding: 12px 30px;
   font-size: 18px;
   font-weight: bold;
@@ -136,18 +129,18 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
-  width: 80%;
+  width: 70%;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 /* Hover Effect on Button */
 .card:hover  {
-  background-color: #cbd6dd; /* Darker blue on hover */
+  background-color: #f1f5ed; /* Darker blue on hover */
   transform: scale(1.05);
    /* Slightly grow the button */
 }
 .btn:hover{
-  background-color: #31739e; /* Darker blue on hover */
+  background-color: #045c30; /* Darker blue on hover */
 
    
    /* Slightly grow the button */
@@ -175,7 +168,29 @@
     height: 50%; /* Adjust image height for mobile */
   }
   .btn {
-    width: 90%; /* Increase button width for mobile for better visibility */
+    width: 60%; /* Increase button width for mobile for better visibility */
   }
 }
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+
+  .card-image {
+    height: 120px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px 10px;
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
  

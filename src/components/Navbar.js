@@ -22,7 +22,7 @@
 
 
 import { useState } from "react";
-import "../App.css";
+import "./Navbar.css";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -45,7 +45,7 @@ function Navbar() {
           ☰
         </button>
         <ul className={`nav-links ${isMenuOpen ? "open" : ""}`}>
-          <li><a href="/">Home</a></li>
+          <li><a href="/">Back</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/career">Start Now</a></li>
         </ul>

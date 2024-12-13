@@ -15,6 +15,9 @@ function Career() {
   const handleGraduationClick = () => {
     navigate('/study2'); // Navigate to the Study page
   }
+  const handleScholarshipClick = () => {
+    navigate('/scholar'); // Navigate to the Study page
+  }
   return (
     <>
       <div className="card-row">
@@ -53,7 +56,7 @@ function Career() {
             alt="Graduation" 
             className="card-image" 
           />
-          <button className="btn">Scholarship</button>
+          <button className="btn" onClick={handleScholarshipClick} >Scholarship</button>
         </div>
       </div>
     </>

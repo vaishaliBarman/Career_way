@@ -12,6 +12,7 @@ import Explorer from './components/Explorer';
 import Study1 from './components/Study1';
 import Study2 from './components/Study2';
 import Graduation from './components/Graduation';
+import Scholar from './components/Scholar'; 
 function App() {
   return (
     <Router>
@@ -30,6 +31,7 @@ function App() {
         <Route path="/study2" element={<Study2/>} />
         <Route path="/graduation" element={<Graduation />} />
         <Route path="explorer" element={<Explorer />} />
+        <Route path="/scholar" element={<Scholar />} />
 
          
       </Routes>

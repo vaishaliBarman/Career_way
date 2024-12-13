@@ -33,7 +33,7 @@ function Study() {
         {/* Vocational Education Box */}
         <div className="box">
           <img
-            src="https://t4.ftcdn.net/jpg/06/77/24/11/360_F_677241119_W74KARdZABhhXcjhoev5DO0uuPdOQCHZ.jpg"
+            src="https://static.vecteezy.com/system/resources/previews/008/176/789/non_2x/education-is-the-way-to-success-3d-render-illustration-free-photo.jpg"
             alt="Vocational Education"
             className="card-image"
           />

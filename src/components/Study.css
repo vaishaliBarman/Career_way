@@ -1,26 +1,20 @@
- /* General Body Styling */
-body {
-    background-image: linear-gradient(145deg, #618da1bd, rgba(89, 104, 170, 0.651), rgba(60, 46, 136, 0.486));
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-}
-
+  
 /* Box Styling */
 .box {
     width: 45%; /* Default width for desktop */
     height: 70vh; /* Adjust height for better proportion */
-    background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1015/604/desktop-wallpaper-children-s-ministry-background-children.jpg");
+   /* background-image: url("https://e1.pxfuel.com/desktop-wallpaper/1015/604/desktop-wallpaper-children-s-ministry-background-children.jpg");*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(3, 12, 85, 0.938);
+    box-shadow: 2px 5px 13px rgba(9, 66, 1, 0.938);
     overflow: hidden;
     position: relative;
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
     cursor: pointer;
-    margin-bottom: 30px;
+     
 }
 
 /* Hover Effect on Card */
@@ -35,6 +29,7 @@ body {
     height: 60%; /* Adjust height to fit within the new card size */
     object-fit: cover;
     transition: opacity 0.3s ease;
+     
 }
 
 /* Button Styling inside the Card */
@@ -43,8 +38,8 @@ body {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #1e5e88; /* Blue button */
-    color: #f39c12;
+    background-color: #1F4529; /* Blue button */
+    color: white;
     padding: 12px 30px;
     font-size: 18px;
     font-weight: bold;
@@ -59,12 +54,12 @@ body {
 
 /* Hover Effect on Button */
 .box:hover {
-    background-color: #e8eff3; /* Darker blue on hover */
+      /* Darker blue on hover */
     transform: scale(1.05); /* Slightly grow the button */
 }
 
 .btn:hover {
-    background-color: #023e66; /* Darker blue on hover */
+    background-color: #096630; /* Darker blue on hover */
 }
 
 /* Button Animation */
@@ -86,7 +81,7 @@ body {
 /* Heading Styling */
 .box h3 {
     font-size: 2.4rem;
-    color: #051a49;
+    color: #012701;
     margin-top: 15px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;

@@ -1,4 +1,4 @@
- import React from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import "./Study.css";
 
@@ -33,7 +33,7 @@ function Study() {
         {/* Vocational Education Box */}
         <div className="box">
           <img
-            src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/06/10213900/Vocational-Courses-after-12th.jpg"
+            src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2015/12/01/Pictures/_c34102da-9849-11e5-b4f4-1b7a09ed2cea.jpg"
             alt="Vocational Education"
             className="card-image"
           />

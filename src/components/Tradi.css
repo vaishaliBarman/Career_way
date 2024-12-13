@@ -1,126 +1,173 @@
-.card{
-  background-image: linear-gradient(10deg,  rgba(154, 223, 217, 0.3), rgba(15, 116, 175, 0.2));
-    
+ /* General Styles */
+.Aard {
+
+  background-color: #eaf7e4;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  border:  1px solid #c3dfb2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.651);
+  text-align: left;
+  box-sizing: border-box;
+  overflow: visible;
+  transition: all 0.3s ease;
+  
 }
-/* Basic Page Styling */
-.career-guidance-container {
-    font-family: 'Poppins', sans-serif;
-    background: white;
-    padding: 20px;
-  }
-  
-  .career-guidance-header {
-    text-align: center;
-    margin-bottom: 5px;
-  }
-  
-  .career-guidance-header h1 {
-    font-size: 3.5rem;
-    color: #244070;
-  }
-  
-  .career-guidance-header p {
-    font-size: 1.2rem;
-    color: #254a5c;
-  }
-  
-  /* Career Guidance Section */
-  .career-guidance-section {
-    margin-bottom: 10px;
-  }
-  
-  .career-guidance-section h2 {
-    font-size: 2.5rem;
-    color: #244070;
-    margin-bottom: 20px;
-  }
-  
+
+.Aard h3 {
+  font-size: 1.8rem;
+  color: #052e05;
+  margin-bottom: 15px;
+}
+
+.Aard p {
+  font-size: 1.3rem;
+  color: #547c4ad0;
+  margin-top: 0;
+}
+
+ 
+
+.Aard ol li {
+  font-size: 1.4rem;
+  color: #155a0c;
+  margin-bottom: 0;
+  padding-left: 40px;
+}
+
+.Aard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.Aard:hover h3 {
+  color: #0d3f03;
+}
+
+.Aard:hover p,
+.Aard:hover ol li {
+  color: #0c5a2a;
+}
+
+/* Career Guidance Section */
+.career-guidance-cards {
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 1800px;
+  background-color: #ffffffdc;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+.career-guidance-header {
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.career-guidance-header h1 {
+  font-size: 3rem;
+  color: #012c12;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  animation: slideInDown 1s ease-out;
+  text-align: center;
+  justify-content: center;
+}
+
+.career-guidance-header p {
+  font-size: 1.2rem;
+  color: #4b5d16;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  animation: fadeIn 1s forwards;
+}
+
+/* Career Guidance Cards */
+.career-guidance-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.Aard {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.411);
+  flex-basis: 22%;  /* Ensuring enough space between the cards */
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  opacity: 0;
+  animation: fadeInUp 0.8s forwards;
+  font-size: 1.3em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .career-guidance-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .card {
-     
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    margin-bottom: 10px;
+
+  .Aard {
+    width: 80%;
+    margin-bottom: 20px;
     padding: 20px;
-    text-align: left;
   }
-  
-  .card h3 {
-    font-size: 1.8rem;
-    color: #244070;
-  }
-  
-  .card p {
-    font-size: 1.2rem;
-    color: #254a5c;
-  }
-  
-  .card ul {
-    list-style-type: none;
-    padding-left: 20px;
-  }
-  
-  .card ul li {
-    font-size: 1rem;
-    color: #031f2e;
-  }
-  
-  /* Regional Guidance Section */
-  .regional-guidance {
-    background: #2121b1;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .regional-guidance h2 {
+
+  .career-guidance-header h1 {
     font-size: 2.5rem;
-    color: #244070;
   }
-  
-  .regional-guidance h3 {
-    font-size: 1.8rem;
-    color: #244070;
-    margin-top: 20px;
+
+  .career-guidance-header p {
+    font-size: 1rem;
   }
-  
-  .regional-info ul {
-    list-style-type: none;
-    padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .career-guidance-header h1 {
+    font-size: 2rem;
   }
-  
-  .regional-info ul li {
-    font-size: 1.2rem;
-    color: #4a6572;
+
+  .career-guidance-header p {
+    font-size: 1rem;
   }
-  
-   
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .career-guidance-cards {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .card {
-      width: 80%;
-    }
-  
-    .career-guidance-header h1 {
-      font-size: 2.5rem;
-    }
-  
-    .career-guidance-header p {
-      font-size: 1rem;
-    }
-  
-     
+
+  .Aard {
+    width: 100%;
+    min-height: 450px;
+    padding: 20px;
   }
-  
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
