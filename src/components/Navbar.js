@@ -1,27 +1,4 @@
-// import "./Navbar.css";
-
-// function Navbar() {
-//   return (
-//      <>
-//      <div className="navbar">
-//         <div className="logo">
-//           <img src="https://thumbs.dreamstime.com/b/education-logo-concept-graduation-cap-open-book-pages-transparency-flattened-education-logo-concept-graduation-104378681.jpg" alt="logo"/>
-//         <h1>Career_Path</h1>
-//         </div>
-//         <ul>
-//           <li><a href="/">Home</a></li>
-//           <li><a href="/about">About</a></li>
-//           <li><a href="/career">Start Now</a></li>
-//         </ul>
-//      </div>
-
-//      </>
-//   );
-// }
-// export default Navbar;
-
-
-import { useState } from "react";
+ import { useState } from "react";
 import "./Navbar.css";
 
 function Navbar() {

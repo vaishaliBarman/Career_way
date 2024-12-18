@@ -14,23 +14,23 @@ function Scholar() {
             <p>Access scholarships offered across India.</p>
             <ul className="national-links">
               <li>
-                <a href="https://scholarships.gov.in/">National Scholarship Portal</a>
+                <a href="https://scholarships.gov.in/">1.National Scholarship Portal :</a>
               </li>
               <li>
-                <a href="https://www.ugc.gov.in/">UGC Scholarships</a>
+                <a href="https://www.ugc.gov.in/">2.UGC Scholarships :</a>
               </li>
               <li>
-                <a href="https://www.aicte-india.org/">AICTE Scholarships</a>
+                <a href="https://www.aicte-india.org/">3.AICTE Scholarships :</a>
               </li>
               <li>
-                <a href="https://www.buddy4study.com/">Buddy4Study Platform</a>
+                <a href="https://www.buddy4study.com/">4.Buddy4Study Platform :</a>
               </li>
               <li>
-                <a href="https://www.vidyalakshmi.co.in/Students/">Vidya Lakshmi Portal</a>
+                <a href="https://www.vidyalakshmi.co.in/Students/">5.Vidya Lakshmi Portal :</a>
               </li>
               <li>
-                <a href="https://schoolscholarship.cg.nic.in/">
-              Explore More
+                <a href="https://schoolscholarship.cg.nic.in/">6.
+              Explore state level :
             </a></li>
             </ul>
           </section>

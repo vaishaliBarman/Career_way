@@ -93,14 +93,14 @@
   }
   
   .national-level ul li a {
-    color: #00360c;
+    color: #100972;
     font-size: 1em;
     text-decoration: none;
     transition: color 0.3s ease;
   }
   
   .national-level ul li a:hover {
-    color: #074614;
+    color: #2439f5;
   }
   
   /* Responsive Design */
