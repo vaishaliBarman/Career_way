@@ -14,6 +14,7 @@
     text-align: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
     cursor: pointer;
+    background: rgb(245, 250, 245)
      
 }
 
@@ -24,7 +25,7 @@
 }
 
 /* Card Image Styling */
-.card-image {
+.image {
     width: 100%;
     height: 60%; /* Adjust height to fit within the new card size */
     object-fit: cover;
@@ -33,13 +34,22 @@
 }
 
 /* Button Styling inside the Card */
-.btn {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #1F4529; /* Blue button */
-    color: white;
+.btn-1 {
+   
+ 
+     
+    background: linear-gradient(145deg, #def5c3, #8ea378,rgb(89, 139, 89));
+    color: rgb(9, 17, 7);
+    
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 3px rgba(37, 35, 35, 0.699);
+   
+    z-index: 3;
+    margin-top: 30px;
+    
+    
+    font-family: 'Courier New', Courier, monospace;
     padding: 12px 30px;
     font-size: 18px;
     font-weight: bold;
@@ -48,8 +58,8 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     cursor: pointer;
-    width: 80%; /* Button width */
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 70%; /* Button width */
+   
 }
 
 /* Hover Effect on Button */
@@ -58,23 +68,17 @@
     transform: scale(1.05); /* Slightly grow the button */
 }
 
-.btn:hover {
-    background-color: #096630; /* Darker blue on hover */
-}
-
-/* Button Animation */
-.box:hover .card-image {
-    opacity: 0.8; /* Slight opacity change when hovering over the card */
-}
+ 
 
 /* Flexbox Container for Aligning Cards */
 .sanjeevni {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 60px;
     gap: 50px;
     width: 100%;
+    /*background: rgb(245, 250, 245);*/
     flex-wrap: wrap; /* Ensures cards stack on smaller screens */
 }
 
@@ -104,12 +108,14 @@
         margin: 20px 10px;
     }
 
-    .card-image {
+    .image {
         height: 50%; /* Adjust image height for tablets */
     }
 
-    .btn {
-        width: 85%; /* Increase button width for better visibility */
+    .btn-1 {
+        width: 85%; 
+        
+        left : 43%;/* Increase button width for better visibility */
     }
 
     /* Adjust font sizes for tablets */
@@ -129,12 +135,12 @@
         margin: 15px 0;
     }
 
-    .card-image {
+    .image {
         height: 50%; /* Adjust image height for mobile */
     }
 
-    .btn {
-        width: 90%; /* Increase button width for mobile */
+    .btn-1 {
+        width: 85%; /* Increase button width for mobile */
     }
 
     /* Adjust font sizes for mobile */
@@ -154,12 +160,12 @@
         margin: 10px 0;
     }
 
-    .card-image {
+    .image {
         height: 45%; /* Further adjust image height for very small screens */
     }
 
-    .btn {
-        width: 95%; /* Full width button for small screens */
+    .btn-1 {
+        width: 85%; /* Full width button for small screens */
         padding: 15px 20px;
         font-size: 16px;
     }

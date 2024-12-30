@@ -1,18 +1,18 @@
- /* General Home Page Styling */
+  
+  /* General Home Page Styling */
 .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 80vh; /* Full viewport height */
     background-color: #d8e0b5;
-    /*background-image: url('https://i.pinimg.com/736x/e0/95/b4/e095b4db607f2e93fe7aff6cd6044a88.jpg');*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    padding: 20px;
+    padding: 10px;
     overflow: hidden;
     position: relative;
 }
@@ -51,23 +51,19 @@
 /* Header Styling */
 .home h1 {
     font-size: 4rem;
-    
     font-weight: 700;
     letter-spacing: 3px;
     margin: 0;
     text-transform: uppercase;
     color: #052e01;
-    text-shadow: 3px 5px 4px rgb(38, 131, 1);
+    text-shadow: 0px 5px 4px rgb(216, 253, 253);
     opacity: 0;
     animation: fadeInUp 1s forwards, bounceIn 1.5s forwards;
     transition: color 0.3s ease;
     font-family: 'Cinzel Decorative', serif;
     z-index: 2; /* Above the gradient */
 }
-/* try here*/
 
-
- 
 /* Paragraph Styling */
 .home p {
     font-size: 2.5rem;
@@ -75,7 +71,7 @@
     line-height: 1.8;
     max-width: 800px;
     margin: 20px 0;
-    color: #061c27;
+    color: #141f11;
     opacity: 0;
     animation: fadeInUp 1.2s forwards;
     transition: color 0.3s ease;
@@ -106,5 +102,110 @@
     }
     100% {
         background-position: 100% 50%;
+    }
+}
+
+/* Creative Start Button Styling */
+.start {
+    display: inline-block;
+    padding: 18px 40px;
+    font-size: 20px;
+    font-weight: 600;
+    background: linear-gradient(145deg, #def5c3, #8ea378,rgb(89, 139, 89));
+    color: rgb(9, 17, 7);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 3px rgba(27, 27, 27, 0.699);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    z-index: 3;
+    margin-top: 30px;
+    position: relative;
+    animation: bounceIn 1s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Button Hover Effect */
+.start:hover {
+    background-color: #326d35c4;
+    transform: scale(1.1) rotate(10deg); /* Slight rotation and scale */
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.start:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .home h1 {
+        font-size: 3.5rem;
+    }
+    .home p {
+        font-size: 2rem;
+    }
+    .start {
+        padding: 14px 35px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 992px) {
+    .home h1 {
+        font-size: 3rem;
+    }
+    .home p {
+        font-size: 1.8rem;
+    }
+    .start {
+        padding: 12px 30px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 2.3rem;
+    }
+    .home p {
+        font-size: 1.6rem;
+        max-width: 600px;
+    }
+    .start {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home h1 {
+        font-size: 2rem;
+    }
+    .home p {
+        font-size: 1.4rem;
+        max-width: 90%;
+    }
+    .start {
+        padding: 10px;
+        font-size: 14px;
+        width: 80%;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 400px) {
+    .home h1 {
+        font-size: 1.3rem;
+    }
+    .home p {
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+    .start {
+        padding: 10px 25px;
+        font-size: 16px;
+        width: 70%;
     }
 }

@@ -7,8 +7,8 @@
 
 .explorer-container h1 {
   font-size: 2.5rem;
-  color: #0a0a0a;
-    text-shadow: 0 5px 4px rgba(30, 194, 66, 0.8);
+  color: #123100;
+    text-shadow: 0 5px 4px rgba(226, 252, 243, 0.8);
      
     font-family:'Cinzel Decorative', serif;
     z-index: 2;
@@ -19,7 +19,7 @@
 
 .explorer-container p {
   font-size: 1.2rem;
-  color: #1c5a14;
+  color: #645522;
   margin-bottom: 40px;
   animation: fadeIn 1.5s ease-in-out;
 }
@@ -36,8 +36,7 @@
 
 /* Course Card */
 .course-card {
-  background-color: #fff;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.63);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -106,11 +105,13 @@
 /* Responsive Design */
 @media (max-width: 768px) {
   .explorer-container h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
+
   }
 
   .explorer-container p {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   .courses-grid {
@@ -118,3 +119,20 @@
     gap: 15px;
   }
 }
+@media (max-width: 468px) {
+  .explorer-container h1 {
+    font-size: 1.5rem;
+
+  }
+
+  .explorer-container p {
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .courses-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+

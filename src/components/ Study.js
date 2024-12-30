@@ -23,11 +23,11 @@ function Study() {
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/008/733/467/small_2x/cartoon-school-children-with-chalkboard-vector.jpg"
             alt="Traditional Education"
-            className="card-image"
+            className="image"
           />
           <h3>Traditional Education</h3>
           <p>Gain a solid foundation through structured learning.</p>
-          <button className="btn" onClick={handleTraditionalLearnMoreClick}>Learn More</button>
+          <button className="btn-1" onClick={handleTraditionalLearnMoreClick}>Learn More</button>
         </div>
         
         {/* Vocational Education Box */}
@@ -35,11 +35,11 @@ function Study() {
           <img
             src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p2/2015/12/01/Pictures/_c34102da-9849-11e5-b4f4-1b7a09ed2cea.jpg"
             alt="Vocational Education"
-            className="card-image"
+            className="image"
           />
           <h3>Vocational Education</h3>
           <p>Hands-on training for specialized careers.</p>
-          <button className="btn" onClick={handleVocationalLearnMoreClick}>Learn More</button>
+          <button className="btn-1" onClick={handleVocationalLearnMoreClick}>Learn More</button>
         </div>
       </div>
     </>

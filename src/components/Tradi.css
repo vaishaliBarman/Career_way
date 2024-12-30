@@ -1,155 +1,261 @@
- /* General Styles */
-.Aard {
+ 
+/* ..............new one.........*/
 
-  background-color: #eaf7e4;
+/* General Styles */
+.Aard {
+  background-color: #f5fcf1;
   margin: 0;
   display: flex;
   flex-direction: column;
-  border-radius: 15px;
-  border:  1px solid #c3dfb2;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.651);
-  text-align: left;
+  border-radius: 25px;
+  border: 1px solid #c0fa9d;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.822);
+  padding: 20px;
   box-sizing: border-box;
-  overflow: visible;
+  overflow: hidden;
   transition: all 0.3s ease;
-  
 }
 
 .Aard h3 {
-  font-size: 1.8rem;
-  color: #052e05;
-  margin-bottom: 15px;
+  font-size: 1.9rem;
+   
+  color: #004900da;
+  margin-bottom: 1px;
+  text-shadow: 0 1px 2px rgb(138, 240, 231);
+  font-family: 'Courier New', Courier, monospace;
+}
+.Aard h4 {
+  font-size: 1.6rem;
+  color: #0a0a0ac7;
+   
+  margin-top: 0;
+  margin-bottom: 5px;
+   
+  text-shadow: 0 2px 3px rgb(140, 233, 225);
 }
 
 .Aard p {
   font-size: 1.3rem;
-  color: #547c4ad0;
+  color: #3e5338d0;
   margin-top: 0;
 }
 
+.Aard ul li {
+  font-size: 1.2rem;
+  color: #1c3a18;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
  
-
-.Aard ol li {
-  font-size: 1.4rem;
-  color: #155a0c;
-  margin-bottom: 0;
-  padding-left: 40px;
-}
-
-.Aard:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-}
-
-.Aard:hover h3 {
-  color: #0d3f03;
-}
-
-.Aard:hover p,
-.Aard:hover ol li {
-  color: #0c5a2a;
-}
+ 
 
 /* Career Guidance Section */
 .career-guidance-cards {
-  padding: 50px;
+  padding: 20px;
   margin: 0 auto;
-  max-width: 1800px;
-  background-color: #ffffffdc;
-  border-radius: 20px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  opacity: 0;
-  animation: fadeInUp 1s forwards;
+  max-width: 1730px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.career-guidance-header {
-  margin-bottom: 40px;
-  align-items: center;
-}
-
+ 
 .career-guidance-header h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
   color: #012c12;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-bottom: 20px;
-  padding: 10px 0;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  text-shadow: 0 4px 3px rgb(223, 252, 241);
   animation: slideInDown 1s ease-out;
-  text-align: center;
-  justify-content: center;
 }
 
 .career-guidance-header p {
   font-size: 1.2rem;
-  color: #4b5d16;
-  line-height: 1.6;
-  max-width: 800px;
-  margin: 0 auto 30px;
+  color: #252e0b;
+  line-height: 1.4;
+  max-width: 900px;
+  margin: 0 auto 10px;
   animation: fadeIn 1s forwards;
 }
 
-/* Career Guidance Cards */
-.career-guidance-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 30px;
-}
-
+/* Individual Cards */
 .Aard {
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.411);
-  flex-basis: 22%;  /* Ensuring enough space between the cards */
-  min-height: 550px;
+  flex: 1 1 calc(25% - 20px); /* Dynamic sizing */
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   opacity: 0;
   animation: fadeInUp 0.8s forwards;
-  font-size: 1.3em;
 }
 
 /* Responsive Design */
+
+/* Large tablets and small laptops (max-width: 1024px) */
 @media (max-width: 1024px) {
+  .career-guidance-cards {
+    max-width: 100%;
+    gap: 30px;
+  }
+
+  .Aard {
+    flex: 1 1 calc(33.333% - 15px); /* Three cards per row */
+    min-height: 350px;
+  }
+
+  .career-guidance-header h1 {
+    font-size: 2.2rem;
+    margin-top: 30px;
+    text-shadow: 0px 4px 3px rgb(223, 252, 241);
+  }
+
+  .career-guidance-header p {
+    font-size: 1.4rem;
+    color:#015521;
+    font-family: 'Courier New', Courier, monospace;
+
+  }
+  .Aard h3 {
+    font-size: 2rem;
+    color: #031401;
+    text-shadow: 0 3px 5px rgb(152, 223, 217);
+    
+  }
+  .Aard h4 {
+    font-size: 1.8rem;
+    color: #012717;
+     
+  }
+
+  .Aard p {
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace; 
+    color: #1c4d2c;
+  }
+
+  .Aard ul li {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #4a5f2a;
+    
+  }
+}
+
+/* Small tablets and large phones (max-width: 768px) */
+@media (max-width: 768px) {
+   
   .career-guidance-cards {
     flex-direction: column;
     align-items: center;
+    padding: 9px;
+    
   }
 
   .Aard {
-    width: 80%;
+    flex: 1 1 80%; /* Center and make cards wider */
     margin-bottom: 20px;
-    padding: 20px;
   }
 
-  .career-guidance-header h1 {
-    font-size: 2.5rem;
-  }
-
-  .career-guidance-header p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 768px) {
   .career-guidance-header h1 {
     font-size: 2rem;
+    margin-top: 20px;
+    text-shadow: 0px 4px 3px rgb(223, 252, 241);
+  }
+
+  .career-guidance-header p {
+    font-size: 1.3rem;
+    color:#0a2715;
+    font-family: 'Courier New', Courier, monospace; 
+    
+  }
+  .Aard h3 {
+    font-size: 2rem;
+    color: #031401;
+    text-shadow: 0 0 3px rgb(106, 173, 167);
+     
+    
+  }
+  .Aard h4 {
+    font-size: 1.8rem;
+    color: #00502f;
+    
+  }
+
+  .Aard p {
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace; 
+    color: #265837;
+  }
+
+  .Aard ul li {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #3c4e21;
+    
+  }
+}
+
+/* Small phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .career-guidance-header h1 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-top:20px;
+    padding: 5px;
+    text-shadow: 0px 3px 3px rgb(223, 252, 241);
+    
   }
 
   .career-guidance-header p {
     font-size: 1rem;
+    color:#0a2715;
+    font-family: 'Courier New', Courier, monospace; 
+    
   }
 
   .Aard {
-    width: 100%;
-    min-height: 450px;
-    padding: 20px;
+    flex: 1 1 100%;
+    padding: 15px;
+    min-height: auto;
+    
+  }
+
+  .Aard h3 {
+    font-size: 1.4rem;
+    color: #021100;
+    text-align: center;
+    text-shadow: 0px 2px 3px rgb(87, 116, 116);
+  }
+  .Aard h4 {
+    font-size: 1.2rem;
+    color: #030c00;
+     
+    text-shadow: 0px 2px 2px rgb(75, 151, 128);
+  }
+
+  .Aard p {
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace; 
+    color: #09180e;
+  }
+
+  .Aard ul li {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: #4b5f2b;
+    
   }
 }
 
+/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;

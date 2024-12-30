@@ -366,7 +366,8 @@ body {
 
 @media (max-width: 480px) {
   .vocational-container h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 2px rgba(2, 95, 90, 0.897);
   }
 
   .vocational-container p {
